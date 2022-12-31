@@ -1,3 +1,103 @@
 body {
-  background-color: aqua;
+  font-family: monospace;
+  background-color: red;
+}
+
+.grid-container {
+  display: grid;
+  justify-content: space-around;
+  column-gap: 0px;
+  grid-template-columns: auto auto auto auto;
+  padding: 10px;
+  row-gap: 50px;
+}
+
+.grid-item {
+  background-color: #2196f3;
+  padding: 10px 25px 25px 25px;
+  border-radius: 10px;
+}
+
+.likes {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fa-heart {
+  height: 16px;
+  cursor: pointer;
+  user-select: none;
+  align-self: center;
+}
+
+.love {
+  color: red;
+}
+
+#comment-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #2196f3;
+  width: 100%;
+  min-height: 1000px;
+  opacity: 0.95;
+}
+
+.img-close {
+  display: flex;
+  justify-content: center;
+}
+
+.img-close > * {
+  margin: 20px;
+}
+
+.img-close img {
+  width: 400px;
+  height: 400px;
+}
+
+.movie-name {
+  font-size: 18px;
+  font-family: fantasy;
+}
+
+.fa-times {
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.commentBtn,
+.comment-input {
+  font-size: 14px;
+  padding: 6px 12px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 1050px) {
+  .grid-container {
+    display: grid;
+    justify-content: space-around;
+    column-gap: 0px;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    row-gap: 50px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .grid-container {
+    display: grid;
+    justify-content: space-around;
+    column-gap: 0px;
+    grid-template-columns: auto auto;
+    padding: 10px;
+    row-gap: 50px;
+  }
 }
